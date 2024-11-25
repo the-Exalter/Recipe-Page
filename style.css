@@ -1,0 +1,130 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+
+body {
+    background-color: var(--Stone100);
+    font-family: "Outfit", serif;
+    padding-bottom: 10vh;
+}
+.menu {
+    background-color: var(--White);
+    width: 55vw;
+    height: max-content;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+    border: none;
+    border-radius: 20px;
+}
+.omlette {
+    width: inherit;
+    border: none;
+    border-radius: 15px;
+}
+.title {
+    font-family: "Young Serif", serif;
+    font-size: 50px;
+}
+.intro {
+    font-size: 16px;
+}
+.prepTime {
+    width: max-content*2;
+    background-color: var(--Rose50);
+    height: max-content;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    padding-right: 0;
+    color: var(--Rose800);
+}
+.preptitle {
+    margin-top: 0;
+    margin-left: 15px
+}
+li {
+    margin-bottom: 15px;
+}
+li span {
+    position: relative;
+    left: 25px;
+    color: black;
+}
+h1 {
+    font-family: "Young Serif", serif;
+}
+.ingredList > li , h1 , .instructList {
+    color: var(--Brown800);
+}
+.instructList {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+hr {
+    margin-top: 50px;
+}
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+th {
+    padding: 20px;
+    padding-left: 2vw;
+    border-bottom: 1px solid black;
+    width: 50%;
+}
+th > span {
+    font-weight: 400;
+}
+.mexico > th {
+    border: none;
+}
+th:nth-child(2) {
+    color: var(--Brown800);
+}
+@media screen and (max-width: 730px) {
+    .title {
+        font-size: 40px;
+    }
+    .preptitle, .ingredTitle, .instructTitle, .nutTitle {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 590px) {
+    .title {
+        font-size: 30px;
+    }
+    .preptitle, .ingredTitle, .instructTitle, .nutTitle {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 435px) {
+    .title {
+        font-size: 20px;
+    }
+    .preptitle, .ingredTitle, .instructTitle, .nutTitle {
+        font-size: 15px;
+    }
+    .intro {
+        font-size: 10px;
+    }
+    li, th, .nutDes {
+        font-size: 10px;
+    }
+    .prepTime {
+        padding-left: 5px;
+        padding-right: 20px;
+    }
+    .menu {
+        padding: 30px;
+    }
+}
